@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".credits">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="365dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" >
+
+        <ImageButton
+            android:id="@+id/kbs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00078945"
+            app:srcCompat="@drawable/kbs" />
+
+        <ImageButton
+            android:id="@+id/ljs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00898989"
+            app:srcCompat="@drawable/ljs" />
+
+        <ImageButton
+            android:id="@+id/ysi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00282828"
+            app:srcCompat="@drawable/ysi" />
+
+        <Button
+            android:id="@+id/goback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="뒤로가기" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
